@@ -1,115 +1,49 @@
-<div class="container">
-<!-- Static navbar -->
-  <div class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#" class="navbar-brand">
-          Thirty Minutes
-        </a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Activities</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Log Workout</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Sign Out</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </div>
+<div class="col-md-12">
+	<div class="row">
+    <div class="col-md-4">
+      <h2>Recent Workouts</h2>
+        {{#avatar-list-item username="raytiley"}}
+          Ray walked for 33 minutes.<br />
+          <a href="#">
+            10 minutes ago
+          </a>
+        {{/avatar-list-item}}
 
-  <div class="col-md-12">
-  	<div class="row">
-      <div class="col-md-4">
-        <h2>Recent Workouts</h2>
-          <div class="media">
-            <a href="#" class="pull-left">
-              <img src="http://gravatar.com/avatar/230fac043f2eeb97318795804b5a203d" width="80px" height="80px" class="media-object" />
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">raytiley</h4>
-              Ray walked for 33 minutes.<br />
-              <a href="#">
-                10 minutes ago
-              </a>
-            </div>
-          </div>
+        {{#avatar-list-item username="raytiley"}}
+          Ray walked for 33 minutes.<br />
+          <a href="#">
+            yesterday
+          </a>
+        {{/avatar-list-item}}
 
-          <div class="media">
-            <a href="#" class="pull-left">
-              <img src="http://gravatar.com/avatar/230fac043f2eeb97318795804b5a203d" width="80px" height="80px" class="media-object" />
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">raytiley</h4>
-              Ray played frisbee for 10 minutes.<br />
-              <a href="#">
-                yesterday
-              </a>
-            </div>
-          </div>
+        {{#avatar-list-item username="raytiley"}}
+          Ray walked for 33 minutes.<br />
+          <a href="#">
+            2 days ago
+          </a>
+        {{/avatar-list-item}}
 
-          <div class="media">
-            <a href="#" class="pull-left">
-              <img src="http://gravatar.com/avatar/230fac043f2eeb97318795804b5a203d" width="80px" height="80px" class="media-object" />
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">raytiley</h4>
-              Ray did pullups for 10 minutes.<br />
-              <a href="#">
-                3 days ago
-              </a>
-            </div>
-          </div>
+        {{#avatar-list-item username="raytiley"}}
+          Ray walked for 33 minutes.<br />
+          <a href="#">
+            3 days ago
+          </a>
+        {{/avatar-list-item}}
+    </div>
 
-          <div class="media">
-            <a href="#" class="pull-left">
-              <img src="http://gravatar.com/avatar/230fac043f2eeb97318795804b5a203d" width="80px" height="80px" class="media-object" />
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">raytiley</h4>
-              Ray walked for 20 minutes.<br />
-              <a href="#">
-                4 days ago.
-              </a>
-            </div>
-          </div>
-      </div>
-
-      <div class="col-md-4">
-        <h2>On Track This Week</h2>
-        <div class="media">
-            <a href="#" class="pull-left">
-              <img src="http://gravatar.com/avatar/230fac043f2eeb97318795804b5a203d" width="80px" height="80px" class="media-object" />
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">raytiley</h4>
-              Ray has worked out for 120 minutes.
-            </div>
-          </div>
-      </div>
+    <div class="col-md-4">
+      <h2>On Track This Week</h2>
+      {{#avatar-list-item username="raytiley"}}
+        Ray is on track.
+      {{/avatar-list-item}}
+    </div>
 
 
-      <div class="col-md-4">
-        <h2>Longest Streaks</h2>
-        <div class="media">
-            <a href="#" class="pull-left">
-              <img src="http://gravatar.com/avatar/230fac043f2eeb97318795804b5a203d" width="80px" height="80px" class="media-object" />
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">raytiley</h4>
-              Ray is on a 10 day streak.
-            </div>
-          </div>
-      </div>
+    <div class="col-md-4">
+      <h2>Longest Streaks</h2>
+      {{#avatar-list-item username="raytiley"}}
+        Ray is on a 5 day streak.
+      {{/avatar-list-item}}
     </div>
   </div>
 </div>

@@ -1,1 +1,24 @@
-{{outlet}}
+<!-- Static navbar -->
+<div class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{partial "navbar-toggle"}}
+      {{link-to 'Thirty Minutes' 'index' class="navbar-brand"}}
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>{{link-to 'Dashboard' 'dashboard'}}</li>
+        <li>{{link-to 'Activities' 'activities'}}</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Log Workout</a></li>
+        <li>{{link-to 'Profile' 'profile' 23}}</li>
+        <li><a href="#">Sign Out</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</div>
+
+<div class="container">
+	{{outlet}}
+</div>
