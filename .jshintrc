@@ -2,7 +2,9 @@
   "predef": {
     "document": true,
     "window": true,
-    "RaytileyENV": true
+    "RaytileyENV": true,
+    "md5": true,
+    "moment": true
   },
   "browser" : true,
   "boss" : true,

@@ -19,7 +19,7 @@ export default Ember.Controller.extend({
       var activity = this.get('selectedActivity');
       var self = this;
       if (activity) {
-        var user = this.store.find('user', 1).then(function(user) {
+        this.store.find('user', 1).then(function(user) {
           self.store.createRecord('workout', {
             duration: duration,
             user: user,
