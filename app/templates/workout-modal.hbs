@@ -1,0 +1,47 @@
+<div class="modal fade in" style="display: block">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" {{action closeModal}}>
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      	<form {{action logWorkout on='submit'}}>
+          <div class="form-group">
+            <label>Duration</label>
+	           {{input type='number' 
+                     value=workoutDuration 
+                     placeholder="Duration" 
+                     class="form-control"}}
+          </div>
+          <div class="form-group">
+            <label>Activity</label>
+            {{view Ember.Select 
+                   content=activities
+                   optionValuePath="content.id"
+                   optionLabelPath="content.name"
+                   selection=selectedActivity
+                   prompt="Select an Activity"
+                   class="form-control"}}
+          </div>
+        </form>
+  	  </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+                {{action closeModal}}>
+          Close
+        </button>
+        <button type="button"
+                class="btn btn-primary"
+                {{action logWorkout}}>
+          Log Workout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
