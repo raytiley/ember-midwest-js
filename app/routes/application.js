@@ -12,6 +12,11 @@ export default Ember.Route.extend({
 
     closeModal: function() {
       this.disconnectOutlet({outlet: 'modal', parentView: 'application'});
+    },
+
+    signout: function() {
+      this.get('session').signout();
+      this.transitionTo('signin');
     }
   }
 });
