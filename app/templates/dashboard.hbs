@@ -2,33 +2,12 @@
 	<div class="row">
     <div class="col-md-4">
       <h2>Recent Workouts</h2>
-        {{#avatar-list-item username="raytiley"}}
-          Ray walked for 33 minutes.<br />
-          <a href="#">
-            10 minutes ago
-          </a>
+      {{#each}}
+        {{#avatar-list-item username=user.name}}
+          {{activity.name}} for {{duration}} minutes.<br />
+          {{link-to date 'workouts' id}}
         {{/avatar-list-item}}
-
-        {{#avatar-list-item username="raytiley"}}
-          Ray walked for 33 minutes.<br />
-          <a href="#">
-            yesterday
-          </a>
-        {{/avatar-list-item}}
-
-        {{#avatar-list-item username="raytiley"}}
-          Ray walked for 33 minutes.<br />
-          <a href="#">
-            2 days ago
-          </a>
-        {{/avatar-list-item}}
-
-        {{#avatar-list-item username="raytiley"}}
-          Ray walked for 33 minutes.<br />
-          <a href="#">
-            3 days ago
-          </a>
-        {{/avatar-list-item}}
+      {{/each}}
     </div>
 
     <div class="col-md-4">
