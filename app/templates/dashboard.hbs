@@ -3,9 +3,11 @@
     <div class="col-md-4">
       <h2>Recent Workouts</h2>
       {{#each}}
-        {{#avatar-list-item username=user.name}}
+        {{#avatar-list-item username=user.name email=user.email}}
           {{activity.name}} for {{duration}} minutes.<br />
-          {{link-to date 'workouts' id}}
+          {{#link-to 'workouts' id}}
+            {{from-now date}}
+          {{/link-to}}
         {{/avatar-list-item}}
       {{/each}}
     </div>
